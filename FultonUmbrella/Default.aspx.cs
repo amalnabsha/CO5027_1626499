@@ -7,11 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace FultonUmbrella
 {
-    public partial class _Default : Page
+    public partial class default1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

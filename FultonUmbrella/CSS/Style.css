@@ -1,0 +1,195 @@
+﻿/*------ Layout Styles ------*/
+html, body {
+    background-image: url('/images/cloudwallpaper.jpg');
+    color: #78394e;
+    font-family: Verdana;
+    font-size: 12px;
+    margin: 0;
+    min-width: 960px;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+a {
+    outline: none;
+}
+
+p a {
+    color: #1F618D;
+}
+
+ul {
+    position: center;
+}
+
+/*------ Header ------*/
+#header {
+    background-repeat: repeat-x;
+    background-position: center top;
+    height: 152px;
+}
+
+#header div {
+    margin: 0 auto;
+    width: 990px;
+}
+
+#header-top {
+    height: 99px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#header div div div#logo {
+    float: left;
+}
+
+#header div div div {
+    float: right;
+    height: 100px;
+    width: auto;
+}
+
+#header div div div div {
+    display: block;
+    float: none;
+    height: 36px;
+    padding-bottom: 40px;
+    padding-left: 134px;
+    margin-top: 20px;
+    overflow: hidden;
+    width: auto;
+}
+
+/*------ Navigation ------*/
+#navigation a {
+    border-right: 1px solid #1F618D;
+    color: #1F618D;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 13px;
+    padding: 0 5px;
+    text-decoration: none;
+    font-size:13px;
+}
+
+#navigation1 {
+    margin-top: 5px;
+}
+
+#navigation1 ul {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 0 5px;
+    height: 52px;
+    width: auto;
+    background-color: cadetblue;
+    border: 0;
+}
+
+#navigation1 li {
+    /*float: left;*/
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width:160px;
+}
+
+#navigation1 ul li a {
+    background-color: cadetblue;
+    color: #1F618D;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+#navigation a:hover,
+#navigation1 ul li a:hover, #header ul li.current a {
+    color: #f7f022;
+    text-shadow: 1px 1px 0 #ebb8c7;
+}
+
+
+
+#navigation1 ul li.current a {
+        background: no-repeat 0 -97px;
+}
+
+/*------ Body ------*/
+#content {
+    background: #f5f5f5;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.wrap {
+    width: 990px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/*------ Footer ------*/
+#footer {
+    background-color: cadetblue;
+    width: 990px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/*------ ------*/
+label {
+    width: 130px;
+    display: inline-block;
+}
+
+input[type=text], input[type=password] {
+    width: 100px;
+}
+
+.error {
+    color: Red;
+}
+
+.errorMessages {
+    border: 1px solid red;
+    color: Red;
+    background-color: #FFCCCC;
+    margin-bottom: 5px;
+}
+
+/* Always set the map explicitly to define the size of the map*/
+#map {
+    height: 50%;
+    width: 700px;
+    margin: 0 auto 0 auto;
+}
+
+/*------ Default page table -------*/
+#tbldefault{
+    width:25%;
+    margin:10px;
+    float:left;
+    border-collapse:collapse;
+    border: 2px solid black;
+}
+
+#tbldefault tr{
+    padding:10px 10px 10px 10px;
+    text-align:center;
+}
+
+#tbldefault td{
+    padding:5px 10px 5px 10px;
+}
+
+/*** Button ***/

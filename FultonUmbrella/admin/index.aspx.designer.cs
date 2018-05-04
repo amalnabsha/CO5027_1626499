@@ -7,45 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FultonUmbrella {
+namespace FultonUmbrella.admin {
     
     
-    public partial class Site {
+    public partial class index {
         
         /// <summary>
-        /// title control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder title;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// heading2 control.
+        /// BtnProductList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder heading2;
+        protected global::System.Web.UI.WebControls.Button BtnProductList;
         
         /// <summary>
-        /// maincontent control.
+        /// BtnAddProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder maincontent;
+        protected global::System.Web.UI.WebControls.Button BtnAddProduct;
         
         /// <summary>
-        /// GoogleMap control.
+        /// BtnLogOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder GoogleMap;
+        protected global::System.Web.UI.WebControls.Button BtnLogOut;
     }
 }

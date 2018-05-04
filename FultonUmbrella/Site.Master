@@ -1,72 +1,58 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FultonUmbrella.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FultonUmbrella.Site" %>
+
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 <head runat="server">
+    <title><asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder></title>
+    <link href="~/CSS/Style.css" runat="server" rel="stylesheet" type="text/css"/>
+
+    <meta name="viewport" content="initial-sacle=1.0" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    
 </head>
 <body>
-    <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="respond" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
+        <div id="header">
+		<div>
+			<div id="header-top">
+				<div id="logo">
+					<a href="index.aspx"><img src="images/logo1.png" alt="Logo" style="height: 95px"/></a>
+				</div>
+		
+				<div id="navigation">
+					<a href="~/login.aspx" runat="server">Register</a>
+					<a href="~/login.aspx" runat="server">Login</a>
+				</div>
+				
+			</div>
+            <div id="navigation1">
+			<ul>
+				<li><a href="~/default.aspx" runat="server">Home</a></li>
+				<li><a href="~/contact.aspx" runat="server">Contact Us</a></li>
+            </ul>
             </div>
-        </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
-        </div>
+	    </div>
+    </div>
+        <div class="wrap">
+        <div id="content"> 
+		<asp:ContentPlaceHolder ID="heading2" runat="server"></asp:ContentPlaceHolder>
 
-    </form>
+        <asp:ContentPlaceHolder ID="maincontent" runat="server"></asp:ContentPlaceHolder>
+
+          
+	    </div>
+        </div>
+           
+<asp:ContentPlaceHolder ID="GoogleMap" runat="server"></asp:ContentPlaceHolder>  
+    <div id="footer">
+	    <p>
+            <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            <a href="~/Admin/inex.aspx" runat="server">Admin</a>
+	    </p>
+	</div>
+
+    
 </body>
 </html>
